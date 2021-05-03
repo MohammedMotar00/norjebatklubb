@@ -1,0 +1,222 @@
+/*
+Theme Name: Scope Child Theme
+Template: scope
+Author: Mohammed
+Version: 1.0.0
+*/
+
+.isfront {
+  background-color: rgb(26, 23, 23, 0.7);
+}
+
+.sticky-head {
+  top: 0;
+}
+
+.slider-heading {
+  font-size: 40px;
+}
+
+.slider-desc {
+  font-size: 22px;
+}
+
+.site-branding {
+  max-width: 100%;
+  float: none;
+  margin-bottom: 14px;
+}
+
+.navbar-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+}
+
+.carousel-caption {
+  top: 35%;
+}
+
+/* title for about section */
+h2.section-title {
+  text-align: center;
+}
+
+.widgets {
+  justify-content: center;
+}
+
+.widget-inner {
+  width: 100px !important;
+  height: 100px !important;
+  margin: 0 auto;
+}
+
+.widget-inner a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sticky-post .home-post-inner {
+  border: 2px dotted rgb(44, 30, 30);
+  padding: 10px;
+  margin: 0 0 3.5em;
+}
+
+.footer-widgets {
+  text-align: center;
+}
+
+.section-heading {
+  padding: 4%;
+}
+
+/* hover effect for image kontakter */
+.img-kontakter {
+  overflow: hidden;
+  cursor: default;
+}
+
+.img-kontakter img {
+  transition: all 0.4s linear;
+}
+
+.img-kontakter:hover img {
+  transform: scale(1.2);
+}
+
+.share a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.share a :last-child:hover {
+  text-decoration: underline;
+}
+
+.entry-content p {
+  padding: 0 20px;
+}
+
+.section-contact-bg {
+  background: #fff !important;
+}
+
+/* Contact */
+.contact-info-block h3,
+.contact-info-location-details,
+.section-contact .section-title,
+.section-contact .section-description {
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  .site-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 25px;
+  }
+
+  .slider-heading {
+    display: none;
+  }
+
+  .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .slider-desc {
+    font-size: 22px !important;
+  }
+
+  .medlemssida {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .um-205.um {
+    margin-right: 0px !important;
+  }
+
+  .private-single-page {
+    flex-direction: column;
+  }
+
+  .private-pages,
+  .allinfo-page {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  /* contact */
+  .other-contact-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider-desc {
+    font-size: 18px !important;
+  }
+
+  .carousel-caption {
+    top: 45%;
+  }
+}
+
+@media (max-width: 470px) {
+  .carousel-caption {
+    top: 36%;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  #site-navigation {
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider-desc {
+    font-size: 16px !important;
+  }
+
+  .header-page-title {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .site-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 340px) {
+  .slider-desc {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .site-title {
+    font-size: 14px;
+  }
+
+  .carousel-caption {
+    top: 40%;
+    display: none;
+  }
+}
