@@ -8,18 +8,6 @@ function enqueue_parent_styles()
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
 
 
-// add_action('wp_enqueue_scripts', 'my_custom_script_load');
-// function my_custom_script_load()
-// {
-//   wp_enqueue_script('my-login-script', get_stylesheet_directory_uri() . '/login-scripts', array('jquery'));
-// }
-
-
-
-// require get_template_directory() . '/inc/themefarmer-functions.php';
-
-// require get_theme_file_path('inc/themefarmer-functions.php');
-
 function team_members()
 {
   $args = array(
@@ -52,16 +40,6 @@ function redirect_team_members_cpt()
 add_action('template_redirect', 'redirect_team_members_cpt');
 
 
-// Add read_private_posts capability to subscriber
-// function add_sub_caps()
-// {
-//   global $wp_roles;
-
-//   $role = get_role('subscriber');
-//   $role->add_cap('read_private_posts');
-// }
-// add_action('admin_init', 'add_sub_caps');
-
 $subRole = get_role('subscriber');
 $subRole->add_cap('read_private_posts');
 $subRole->add_cap('read_private_pages');
@@ -84,29 +62,6 @@ function remove_admin_bar_except_admins()
 }
 add_action('after_setup_theme', 'remove_admin_bar_except_admins');
 
-
-// handle login ajax request
-// add_action('wp_ajax_custom_login', 'handle_custom_login');
-// function handle_custom_login()
-// {
-//   $param = isset($_REQUEST['param']) ? trim($_REQUEST['param']) : "";
-
-//   if ($param == "login_test") {
-//     $info = array();
-//     $info['user_email'] = $_POST['user_email'];
-//     $info['user_pass'] = $_POST['user_pass'];
-
-//     $user_signon = wp_signon($info, false);
-
-//     if (is_wp_error($user_signon)) {
-//       echo json_encode(array("status" => 0));
-//     } else {
-//       echo json_encode(array("status" => 1));
-//     }
-//   }
-
-//   wp_die();
-// }
 
 
 // Custom Image Sizes

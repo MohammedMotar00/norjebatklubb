@@ -100,5 +100,5 @@ $site_header = is_front_page() ? 'site-header' : 'not-frontpage-header';
       <?php do_action('themefarmer_after_header_main'); ?>
     </header><!-- #masthead -->
 
-    <div id="content" class="site-content">
+    <div id="content" class="site-content" style="min-height: 100vh;">
       <?php scope_after_header(); ?>

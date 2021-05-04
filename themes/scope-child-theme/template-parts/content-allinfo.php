@@ -15,7 +15,7 @@
       <div class="entry-summary post-description"><?php the_excerpt(); ?></div>
       <div class="clearfix"></div>
       <div class="blog-btn">
-        <a class="btn btn-read-more" href="<?php the_permalink(); ?>"><?php esc_html_e('READ MORE', 'scope'); ?></a>
+        <a class="btn btn-read-more" href="<?php the_permalink(); ?>"><?php esc_html_e('LÄS MER', 'scope'); ?></a>
       </div>
     </div>
   </div>

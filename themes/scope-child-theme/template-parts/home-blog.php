@@ -11,9 +11,6 @@
       <div class="home-blog">
         <?php
         $post_count = absint(get_theme_mod('themefarmer_home_blog_count', 10));
-        // $sticky = get_option('sticky_posts');
-        // print_r($sticky);
-        // $apaged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array('post_type' => 'post',  'posts_per_page' => $post_count);
         $query = new WP_Query($args);
         while ($query->have_posts()) {

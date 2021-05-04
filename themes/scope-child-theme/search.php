@@ -29,8 +29,6 @@ get_header(); ?>
         </div>
         <div class="clearfix"></div>
         <div class="scp-pagination">
-          <?php // the_posts_pagination(); 
-            ?>
           <?php
             $args = array(
               'prev_text' => __('Tidigare', 'textdomain'),

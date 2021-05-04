@@ -24,10 +24,10 @@ get_header();
 ?>
 
 <div class="container-full space blog-post-index content-area">
-  <div class="container d-flex private-single-page">
+  <div class="container private-single-page">
     <div class="row justify-content-center mb-3">
       <main id="main"
-        class="<?php echo esc_attr(scope_blog_layout()); ?> col-sm-12 col-xs-12 blog-left blog-posts-wrap site-main">
+        class="<?php echo esc_attr(scope_blog_layout()); ?> col-md-8 col-sm-12 col-xs-12 blog-left blog-posts-wrap site-main">
         <div id="blog-content" class="row scp-page">
           <?php
           while (have_posts()) : the_post();
@@ -44,8 +44,8 @@ get_header();
         </div>
         <div class="clearfix"></div>
       </main><!-- #main -->
+      <?php get_template_part('template-parts/content', 'sidebar-private'); ?>
     </div>
-    <?php get_template_part('template-parts/content', 'sidebar-private'); ?>
   </div>
 </div>
 <?php

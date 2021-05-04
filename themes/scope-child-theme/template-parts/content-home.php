@@ -1,8 +1,6 @@
 <?php
 $sticky = is_sticky(get_the_ID());
 $sticky_post_class = $sticky ? 'sticky-post' : '';
-// $sticky_post_class = is_sticky(the_ID()) ? 'sticky-post' : '';
-// get_the_ID();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($sticky_post_class); ?>>

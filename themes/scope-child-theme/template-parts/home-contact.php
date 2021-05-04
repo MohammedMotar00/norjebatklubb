@@ -35,7 +35,6 @@
                 if (function_exists('themefarmer_get_simple_contact_form')) {
                   themefarmer_get_simple_contact_form();
                 }
-                // get_template_part('template-parts/content', 'contact');
                 ?>
             </div>
           </div>

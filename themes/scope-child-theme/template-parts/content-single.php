@@ -17,10 +17,5 @@
       <div class="clearfix"></div>
     </div><!-- .entry-content -->
     <div class="clearfix"></div>
-    <!-- <div class="entry-footer">
-      <?php // scope_entry_footer(); 
-      ?>
-    </div> -->
   </div>
 </article>
-<!-- <?php get_template_part('template-parts/author', 'info'); ?> -->

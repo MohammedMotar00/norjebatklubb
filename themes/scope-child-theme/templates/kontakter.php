@@ -60,11 +60,6 @@ $loop = new WP_Query($args);
             <p><?php echo the_field('phone_number'); ?></p>
           </a>
           <?php endif; ?>
-
-          <!-- <div class="blog-btn">
-              <a class="btn btn-read-more"
-                href="<?php the_permalink(); ?>"><?php esc_html_e('LÄS MER...', 'scope'); ?></a>
-            </div> -->
         </div>
       </div>
     </div>
