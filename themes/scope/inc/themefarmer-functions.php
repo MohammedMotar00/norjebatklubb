@@ -489,7 +489,7 @@ function scope_header_page_title()
   } elseif (is_archive()) {
     $title = str_replace('archives:', '', strtolower(get_the_archive_title()));
   } elseif (is_search()) {
-    $title = sprintf(__('Search Results for : %s', 'scope'), get_search_query());
+    $title = sprintf(__('Sökresultat för : %s', 'scope'), get_search_query());
   } elseif (is_404()) {
     $title = sprintf(__('Fel 404  : Sidan hittas inte', 'scope'));
   } elseif (is_single()) {

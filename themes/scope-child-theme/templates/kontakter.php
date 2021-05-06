@@ -3,12 +3,6 @@
 Template Name: Kontakter
 */
 
-
-
-$skill = get_field('skill');
-$email = the_field('email');
-$phone_number = the_field('phone_number');
-
 get_header();
 ?>
 
