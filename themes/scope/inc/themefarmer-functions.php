@@ -388,7 +388,6 @@ function scope_home_sections_init()
   $default_sections =  apply_filters('scope_home_page_default_sections', array('slider', 'services', 'about', 'products-latest', 'team', 'callout', 'testimonials', 'brands',  'subscribe', 'blog',   'contact'));
   $home_sections = get_theme_mod('scope_home_layout', $default_sections);
   $home_sections = apply_filters('scope_home_page_sections', $home_sections);
-  // $priority = 30;
   foreach ($home_sections as $key => $section) {
     $section_name = str_replace('-', '_', $section);
     $section_name = str_replace(' ', '_', $section_name);
@@ -423,7 +422,6 @@ function scope_home_sections_init()
         add_action('scope_print_home_page_sections', 'themefarmer_homepage_section_' . $section_name, $priority);
       }
     }
-    // $priority += 10;
   }
 }
 add_action('scope_befor_print_home_page_sections', 'scope_home_sections_init', 30);
